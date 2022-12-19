@@ -41,8 +41,15 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
         
-    - name: Upload artifacts
+    - name: Upload build
       uses: actions/upload-artifact@v2
       with:
         name: umdh-gui-windows-x64
         path: ./bin
+
+    - name: Upload scan result
+      uses: actions/upload-artifact@v2
+      with:
+        name: umdh-gui-windows-x64
+        path: ./results
+
