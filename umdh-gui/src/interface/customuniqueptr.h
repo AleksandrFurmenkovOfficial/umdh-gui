@@ -24,7 +24,7 @@ namespace gui
     }
 
     template <class To, class From>
-    unique_ptr<To> dynamic_unique_cast(unique_ptr<From> &&p)
+    unique_ptr<To> dynamic_unique_cast(unique_ptr<From> &&p) // test
     {
         if (To *cast = dynamic_cast<To*>(p.get()))
         {
