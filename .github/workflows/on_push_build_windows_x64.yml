@@ -15,7 +15,7 @@ jobs:
     name: Add AI comment with review for changes
     steps:
       - name: AI review
-        uses: actions/ai-code-review@v1
+        uses: AleksandrFurmenkovOfficial/ai-code-review@v1
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
